@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lista de Empregados</title>
+    <link type="text/css" rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td class="boxB">
+          <h1>Lista de Empregados!</h1>
+
+          <form autocomplete="off" onsubmit="submeterForm()">
+            <div>
+              <p>Nome Completo:<label for="nomeComp"></label></p>
+              <input type="text" name="nomeComp" id="nomeComp" />
+            </div>
+            <div>
+              <p>Idade:<label for="idade"></label></p>
+              <input type="text" name="idade" id="idade" />
+            </div>
+            <div>
+              <p>Salário:<label for="salario"></label></p>
+              <input type="text" name="salario" id="salario" />
+            </div>
+            <div>
+              <p>Cidade:<label for="cidade"></label></p>
+              <input type="text" name="cidade" id="cidade" />
+            </div>
+            <div class="form_action--button">
+              <input type="submit" value="Salvar" />
+              <input type="reset" value="Apagar" />
+            </div>
+          </form>
+        </td>
+        <td class="boxB">
+          <table class="list" id="listaEmpregados">
+            <thead>
+              <tr>
+                <th>Nome Completo</th>
+                <th>idade</th>
+                <th>Salário</th>
+                <th>Cidade</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <script src="scripts/scripts.js"></script>
+  </body>
+</html>
